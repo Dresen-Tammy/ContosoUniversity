@@ -7,7 +7,7 @@ namespace ContosoUniversity2.Models
     public class Course
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        [Display(Name = "Number")]
+        [Display(Name = "Course #")]
         public int CourseID { get; set; }
 
         [StringLength(50, MinimumLength = 3)]

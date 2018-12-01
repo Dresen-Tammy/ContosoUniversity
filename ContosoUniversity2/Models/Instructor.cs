@@ -24,10 +24,10 @@ namespace ContosoUniversity2.Models
         [Display(Name = "Hire Date")]
         public DateTime HireDate { get; set; }
 
-        [Display(Name = "Full Name")]
+        [Display(Name = "Instructor Name")]
         public string FullName
         {
-            get { return LastName + ", " + FirstMidName; }
+            get { return FirstMidName + ", " + LastName; }
         }
 
         public ICollection<CourseAssignment> CourseAssignments { get; set; }
