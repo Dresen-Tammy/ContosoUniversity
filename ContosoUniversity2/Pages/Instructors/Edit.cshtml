@@ -1,16 +1,16 @@
-﻿@page
+﻿@page 
 @model ContosoUniversity2.Pages.Instructors.EditModel
 
 @{
     ViewData["Title"] = "Edit Instructor";
 }
 
-<h2>Edit</h2>
+<h2>Edit Instructor:</h2>
 
-<h4>Instructor</h4>
+<h4>@Html.DisplayFor(model => model.Instructor.FullName)</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-12">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Instructor.ID" />
@@ -35,8 +35,8 @@
                 <span asp-validation-for="Instructor.OfficeAssignment.Location" class="text-danger"></span>
             </div>
            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <table>
+                <div class=" col-md-12">
+                    <table class="whiteTable">
                         <tr>
                             @{
                                 int cnt = 0;
@@ -47,7 +47,7 @@
                                     {
                                         @:</tr><tr>
                                     }
-                                    @:<td>
+                                    @:<td class="check">
                                         <input type="checkbox"
                                                name="selectedCourses"
                                                value="@course.CourseID"
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Save" class="btn btn-default button" />
             </div>
         </form>
     </div>

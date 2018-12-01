@@ -1,8 +1,7 @@
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
-for details on configuring this project to bundle and minify static web assets. */
 body {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 20px;
+    font-size: 16px;
 }
 
 /* Wrapping element */
@@ -10,28 +9,200 @@ body {
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 20px;
 }
-
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
-}
-
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
+/* Index Page */
+.imgBox {
+    background-image: url(../images/college.png);
+    background-position: center;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
 }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
+/*Headings*/
+h4, h2 {
+    color: #333333;
+}
+h1 {
+    color: #670001;
+    font-family: "Playfair Display SC", serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 0.5em;
 }
 
+a {
+    color: #670001;
+}
+/* Nav */
+#nav {
+    background-color: #670001;
+    border: none;
+}
+
+    #nav .navbar-brand {
+        color: #ffffff;
+    }
+
+        #nav .navbar-brand:hover {
+            color: #cccccc;
+        }
+
+        #nav .navbar-brand:active {
+            color: #333333;
+        }
+
+    #nav .navbar-nav .nav-button .nav-a:link, #nav .navbar-nav .nav-button .nav-a:visited {
+        color: #ffffff;
+    }
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+    .navbar-inverse .navbar-nav > li > a:hover {
+        color: #cccccc;
+    }
+
+    .navbar-inverse .navbar-nav > li > a:active {
+        color: #333333;
+    }
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #333333;
+}
+.whiteTable {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.dl-horizontal dt {
+    text-align: left;
+}
+#nav .navbar-nav .nav-button .nav-a:hover {
+    color: #193e4e;
+}
+
+#nav .navbar-nav .nav-button .nav-a:active {
+    color: #ffffff;
+}
+.a2 {
+    margin-left: 10px;
+}
+.check {
+    width: 33%;
+}
+
+/*Tables*/
+form {
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+    form input, form .form-control {
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: gray;
+        padding: 5px;
+    }
+
+    form select {
+        border-radius: 2px;
+        padding: 5px;
+    }
+
+.filter {
+    margin-left: 8px;
+}
+
+.table {
+    border: 1px solid #decebe;
+    margin-top: 25px;
+    background-color: white;
+}
+    .table > thead > tr > td.success, .table > tbody > tr > td.success, .table > tfoot > tr > td.success, .table > thead > tr > th.success, .table > tbody > tr > th.success, .table > tfoot > tr > th.success, .table > thead > tr.success > td, .table > tbody > tr.success > td, .table > tfoot > tr.success > td, .table > thead > tr.success > th, .table > tbody > tr.success > th, .table > tfoot > tr.success > th {
+        background-color: #d9bfc0;
+    }
+    .table a {
+        color: #670001;
+    }
+
+        .table a:hover {
+            color: #9a3334;
+        }
+
+thead {
+    background-color: #cccccc;
+}
+
+th {
+    color: #333333;
+}
+
+.table th a {
+    color: #670001;
+    text-decoration: underline;
+}
+
+th {
+    padding: 0 10px 0 0;
+    color: #670001;
+}
+td {
+    padding: 0 10px 0 0;
+}
+/*Button*/
+.button {
+    background-color: #777777;
+    color: #ffffff;
+    border: none;
+    padding: 7px 10px;
+    width: auto;
+    font-size: 16px;
+}
+.button2 {
+    margin-top: -2px;
+}
+    .button:hover {
+        color: #670001;
+        background-color: #cccccc;
+    }
+
+    .sections {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 30px;
+        margin: 50px 0;
+        border-radius: 5px;
+    }
+    .sectionImg {
+        width: 25%;
+    }
+    .sectionImg img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .sectionH2 {
+        text-align: center;
+    }
+    .sections {
+        border: 1px #cccccc solid;
+    }
 /* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 50px;
     }
 }

@@ -1,13 +1,13 @@
-﻿@page
+﻿@page 
 @model ContosoUniversity2.Pages.Courses.EditModel
 
 @{
     ViewData["Title"] = "Edit Course";
 }
 
-<h2>Edit</h2>
+<h2>Edit Course:</h2>
 
-<h4>Course</h4>
+<h4>@Html.DisplayFor(model => model.Course.Title)</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -35,7 +35,7 @@
                 <span asp-validation-for="Course.DepartmentID" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Save" class="btn btn-default button" />
             </div>
         </form>
     </div>

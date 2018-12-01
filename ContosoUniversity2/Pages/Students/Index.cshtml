@@ -5,7 +5,7 @@
     ViewData["Title"] = "Students";
 }
 
-<h2>Index</h2>
+<h2>Students</h2>
 
 <p>
     <a asp-page="Create">Create New</a>
@@ -16,8 +16,8 @@
         <p>
             Find by name:
             <input type="text" name="SearchString" value="@Model.CurrentFilter" />
-            <input type="submit" value="Search" class="btn btn-default" />
-            <a asp-page="./Index">Back to full List</a>
+            <input type="submit" value="Search" class="btn btn-default button button2" />
+            <a class="a2" asp-page="./Index">Back to full List</a>
         </p>
     </div>
 </form>
@@ -26,13 +26,13 @@
         <tr>
             <th>
                 <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort"
-                   asp-route-searchString="@Model.CurrentFilter">
+                   asp-route-searchString="@Model.CurrentFilter" >
                     @Html.DisplayNameFor(model => model.Student[0].StudentName)
                 </a>
             </th>
             <th>
                 <a asp-page="./Index" asp-route-sortOrder="@Model.DateSort"
-                   asp-route-searchString="@Model.CurrentFilter">
+                   asp-route-searchString="@Model.CurrentFilter" >
                     @Html.DisplayNameFor(model => model.Student[0].EnrollmentDate)
                 </a>
             </th>
@@ -66,13 +66,13 @@
    asp-route-sortOrder="@Model.CurrentSort"
    asp-route-pageIndex="@(Model.Student.PageIndex - 1)"
    asp-route-currentFilter="@Model.CurrentFilter"
-   class="btn btn-default @prevDisabled">
+   class="btn btn-default button @prevDisabled">
     Previous
 </a>
 <a asp-page="./Index"
    asp-route-sortOrder="@Model.CurrentSort"
    asp-route-pageIndex="@(Model.Student.PageIndex + 1)"
    asp-route-currentFilter="@Model.CurrentFilter"
-   class="btn btn-default @nextDisabled">
+   class="btn btn-default button @nextDisabled">
     Next
 </a>
