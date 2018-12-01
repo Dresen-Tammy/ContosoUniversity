@@ -31,6 +31,9 @@ body {
 h4, h2 {
     color: #333333;
 }
+h2 {
+    font-family: "Playfair Display SC", serif;
+}
 h1 {
     color: #670001;
     font-family: "Playfair Display SC", serif;
@@ -47,10 +50,12 @@ a {
 #nav {
     background-color: #670001;
     border: none;
+    font-family: "Playfair Display SC", serif;
 }
 
     #nav .navbar-brand {
         color: #ffffff;
+
     }
 
         #nav .navbar-brand:hover {
@@ -58,7 +63,8 @@ a {
         }
 
         #nav .navbar-brand:active {
-            color: #333333;
+            color: #cccccc;
+            text-decoration: underline;
         }
 
     #nav .navbar-nav .nav-button .nav-a:link, #nav .navbar-nav .nav-button .nav-a:visited {
