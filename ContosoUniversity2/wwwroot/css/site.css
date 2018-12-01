@@ -51,6 +51,7 @@ a {
     background-color: #670001;
     border: none;
     font-family: "Playfair Display SC", serif;
+    font-weight: 600;
 }
 
     #nav .navbar-brand {
@@ -80,7 +81,8 @@ a {
     }
 
     .navbar-inverse .navbar-nav > li > a:active {
-        color: #333333;
+        color: #ffffff;
+        text-decoration: underline;
     }
 
 a:hover, a:focus {

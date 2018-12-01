@@ -18,8 +18,8 @@ namespace ContosoUniversity2.Models
             RegularExpression(@"[a-zA-Z""'\s-]*$"),
             StringLength(50, MinimumLength =1, ErrorMessage = "Last name must be 1-50 characters.")]
         public string LastName { get; set; }
-        [DataType(DataType.Date), Display(Name = "Enrollment Date"),
-            DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}", ApplyFormatInEditMode = true)]
+        [DataType(DataType.Date), Display(Name = "Enrollment Date")]
+      
         public DateTime EnrollmentDate { get; set; }
 
         public ICollection<Enrollment> Enrollments { get; set; }

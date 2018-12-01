@@ -18,8 +18,7 @@ namespace ContosoUniversity2.Models
         public decimal Budget { get; set; }
 
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}", ApplyFormatInEditMode = true)]
-        [Display(Name = "Start Date")]
+         [Display(Name = "Start Date")]
         public DateTime StartDate { get; set; }
 
         public int? InstructorID { get; set; }
